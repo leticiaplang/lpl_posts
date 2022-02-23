@@ -5,15 +5,8 @@ permalink: /about/
 ---
 
 <p align=center> 
-  <img src=""https://giphy.com/gifs/uB86ZyWQsnFSGYe2sA" alt="animated" />
+  <img src="https://media4.giphy.com/media/MeJgB3yMMwIaHmKD4z/giphy.gif?cid=ecf05e47la8jjkkx87wso3k6wl6bzd1gatg4n9332v7chc4h&rid=giphy.gif&ct=g" alt="animated" />
 </p>
-                                                                      
-                                                                      
-<iframe src="https://giphy.com/embed/uB86ZyWQsnFSGYe2sA" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/uB86ZyWQsnFSGYe2sA">via GIPHY</a></p>
-
-<p align=center>
-   <image src="https://giphy.com/embed/MeJgB3yMMwIaHmKD4z" width="480" height="394" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/2000s-00s-middle-school-MeJgB3yMMwIaHmKD4z" >
-
 
 
 <body>
@@ -25,3 +18,7 @@ permalink: /about/
    <h3> 🔸 The next steps are continuing my studies by profounding knowledge, looking for chalenges or associated contents and continuing help people who are interested in this data world or who are on this journey as I'm 🌎
    <h3> 🔸 Let me know more about you by contacting me. I'll be a pleasure 😄
 </body>
+
+<p align=center> 
+  <img src="https://media2.giphy.com/media/uB86ZyWQsnFSGYe2sA/giphy.gif?cid=ecf05e47lxndicitg8vud7vw1h9bqgvvjqo2lgtni15vjuju&rid=giphy.gif&ct=g" alt="animated" />
+</p>
