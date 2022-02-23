@@ -4,8 +4,13 @@ title: About Me
 permalink: /about/
 ---
 
+<p align=center> 
+  <img src="https://media1.giphy.com/media/26BoEeFJkz2eZUBcQ/giphy.gif?cid=ecf05e47n0ch6qzasfv25butscg06czj8dqk6776kht3hnee&rid=giphy.gif&ct=g" alt="animated" />
+</p>
+
+
 <p align=center>
-   <image src="https://giphy.com/embed/MeJgB3yMMwIaHmKD4z" width="480" height="394" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/2000s-00s-middle-school-MeJgB3yMMwIaHmKD4z">
+   <image src="https://giphy.com/embed/MeJgB3yMMwIaHmKD4z" width="480" height="394" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/2000s-00s-middle-school-MeJgB3yMMwIaHmKD4z" >
 
 
 
