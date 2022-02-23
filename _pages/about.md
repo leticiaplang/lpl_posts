@@ -13,3 +13,4 @@ permalink: /about/
 * I graduated in nursing scholl where I found empathy, compassion and human stregtness above all knowlegde 
 * I mastered in infection control, where I falled in love by data and accesible comunication/information
 * Now I'm data scientist to use the criative potetial to benefit people with data driven decision making and task automatization.
+* The next steps are continuing my studies by profounding knowledge, looking for chalenges or associated contents and continuing help people who are interested in this data world or who are on this journey as I'm. 
