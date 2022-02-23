@@ -73,7 +73,7 @@
   
       ,"page1": {
           "title": "About Me",
-          "content": "&lt;/p&gt; .",
+          "content": ".",
           "url": "https://leticiaplang.github.io/lpl_posts/about/",
           "relUrl": "/about/",
           "date": ""
