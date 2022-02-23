@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 <p align=center> 
-  <img src="https://media4.giphy.com/media/MeJgB3yMMwIaHmKD4z/giphy.gif?cid=ecf05e47la8jjkkx87wso3k6wl6bzd1gatg4n9332v7chc4h&rid=giphy.gif&ct=g" alt="animated"="250" ="400"/>
+  <img src="https://media4.giphy.com/media/MeJgB3yMMwIaHmKD4z/giphy.gif?cid=ecf05e47la8jjkkx87wso3k6wl6bzd1gatg4n9332v7chc4h&rid=giphy.gif&ct=g" alt="animated"="200" ="300"/>
 </p>
 
 
