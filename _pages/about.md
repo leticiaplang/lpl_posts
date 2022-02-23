@@ -10,7 +10,7 @@ permalink: /about/
 
 
 <body>
-   <h4> 🔸 This gif is a little cliche, but it's still funny and the beginning of a journey for a lot of people 🧙‍♀️
+   <h4> 🔸 This gif is a little cliche, but it's still exciting and the beginning of a journey for a lot of people 🧙‍♀️
    <h4> 🔸 I'm a person who appreciate the smallest daily things, enjoying the present, living with harmony and helping as always as possible 🇧🇷
    <h4> 🔸 I graduated in nursing scholl where I found empathy, compassion and human stregtness above all knowlegde 👩‍⚕️
    <h4> 🔸 I mastered in infection control, where I fell in love by data and accesible comunication/information 📊
