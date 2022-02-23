@@ -14,3 +14,5 @@ permalink: /about/
 <h3> 🟠 I mastered in infection control, where I fell in love by data and accesible comunication/information 📊
 <h3> 🟠 Now I'm data scientist to use the criative potetial to benefit people with data driven decision making and task automatization 👩‍💻
 <h3> 🟠 The next steps are continuing my studies by profounding knowledge, looking for chalenges or associated contents and continuing help people who are interested in this data world or who are on this journey as I'm 🌎
+<h3> 🔸 Let me know more about you by contacting me. I'll be a pleasure 😄
+
