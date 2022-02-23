@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 <p align=center> 
-  <img src="https://www.instagram.com/ninatsurstudio/" alt="animated" />
+  <img src=""https://giphy.com/embed/MeJgB3yMMwIaHmKD4z" alt="animated" />
 </p>
 
 
