@@ -10,7 +10,7 @@ title: Notebooks
 description: | My Universe
 github_username: leticiaplang
 # you can comment the below line out if your repo name is not different than your baseurl
-github_repo: "lpl_posts"
+github_repo: "my_notebooks"
 
 # OPTIONAL: override baseurl and url if using a custom domain
 # Note: leave out the trailing / from this value. 
@@ -34,7 +34,7 @@ url: "https://leticiaplang.github.io" # the base hostname & protocol for your si
 #
 # 3. You must replace the parameter `baseurl` in _action_files/settings.ini with the same value as you set here but WITHOUT QUOTES.
 #
-baseurl: "/lpl_posts" # the subpath of your site, e.g. "/blog".
+baseurl: "/my_notebooks" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
 minima:
