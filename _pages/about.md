@@ -9,4 +9,4 @@ permalink: /about/
 
 
 <p align=center>  
-  <iframe src="https://giphy.com/embed/RIFr5Mcb2Q4jS" width="600" height="168" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/space-astronomy-cosmos-RIFr5Mcb2Q4jS">via GIPHY</a></p>
+  <iframe src="https://giphy.com/embed/RIFr5Mcb2Q4jS" width="600" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/space-astronomy-cosmos-RIFr5Mcb2Q4jS">via GIPHY</a></p>
