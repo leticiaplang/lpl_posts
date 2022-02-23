@@ -30,7 +30,6 @@ search_exclude: true
   {% for category in categories %}
       <h3 id ="{{ category }}"><i class="fas fa-tags category-tags-icon"></i></i> {{ category }}</h3>
       <a name="{{ category | slugize }}"></a>
-      <div style="line-height: horizontal; color: #336699; font-size: 30px; text-align: center; padding: 12px; background-color: ##DF8771;">
       </div>
       {% for post in site.categories[category] %}
         {% if post.hide != true %}
