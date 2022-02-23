@@ -19,6 +19,4 @@ permalink: /about/
    <h3> 🔸 Let me know more about you by contacting me. I'll be a pleasure 😄
 </body>
 
-<p align=center> 
-  <img src="https://media2.giphy.com/media/uB86ZyWQsnFSGYe2sA/giphy.gif?cid=ecf05e47lxndicitg8vud7vw1h9bqgvvjqo2lgtni15vjuju&rid=giphy.gif&ct=g" alt="animated" />
-</p>
+
