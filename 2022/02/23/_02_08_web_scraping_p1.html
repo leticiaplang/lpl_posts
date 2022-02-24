@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Web scraping - Part 1 | Notebooks</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Web scraping - Part 1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="My Universe" />
+<meta property="og:description" content="My Universe" />
+<link rel="canonical" href="https://leticiaplang.github.io/lpl_posts/2022/02/23/_02_08_web_scraping_p1.html" />
+<meta property="og:url" content="https://leticiaplang.github.io/lpl_posts/2022/02/23/_02_08_web_scraping_p1.html" />
+<meta property="og:site_name" content="Notebooks" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-02-23T00:00:00-06:00" />
+<script type="application/ld+json">
+{"datePublished":"2022-02-23T00:00:00-06:00","url":"https://leticiaplang.github.io/lpl_posts/2022/02/23/_02_08_web_scraping_p1.html","@type":"BlogPosting","headline":"Web scraping - Part 1","dateModified":"2022-02-23T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://leticiaplang.github.io/lpl_posts/2022/02/23/_02_08_web_scraping_p1.html"},"description":"My Universe","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/lpl_posts/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://leticiaplang.github.io/lpl_posts/feed.xml" title="Notebooks" /><link rel="shortcut icon" type="image/x-icon" href="/lpl_posts/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/lpl_posts/">Notebooks</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/lpl_posts/about/">About Me</a><a class="page-link" href="/lpl_posts/search/">Search</a><a class="page-link" href="/lpl_posts/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <a href = "mailto:leticiaplang@gmail.com"><img src="https://img.shields.io/badge/-Gmail-b30900?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+<a href="https://www.linkedin.com/in/leticiaplang" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+<a href="https://leticiaplang.github.io" target="_blank"><img src="https://img.shields.io/badge/My_Universe-DF8771?style=for-the-badge&logo=blog&logoColor=white" target="_blank"></a>
+<a href="https://github.com/leticiaplang" target="_blank"><img src="https://img.shields.io/badge/Github-333333?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting"> 
+  
+ <body style="background-color:#F5C6AC">
+         
+ <header class="post-header">
+      <h1 class="post-title p-name" itemprop="name headline">Web scraping - Part 1</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-02-23T00:00:00-06:00" itemprop="datePublished">
+        Feb 23, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      4 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          
+          
+          
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2021_02_08_web_scraping_p1.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>toc: false</li>
+<li>branch: master</li>
+<li>badges: true</li>
+<li>comments: false</li>
+<li>categories: [fastpages, jupyter]</li>
+<li>hide: false</li>
+<li>author: leticiaplang</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>O <strong>web scraping</strong> é um modo de coletarmos dados de
+uma fonte web e armazená-lo de uma forma que permita 
+a exploração deles para retirada de insights ou para 
+utilização de técnicas de machine learning, por exemplo.</p>
+<p>Aborarei esse conetúdo em três  partes, cada uma 
+abordando uma das maneiras de realizarmos o processo:
+<strong>Selenium</strong>, <strong>Beautiful Soup</strong> e <strong>Requests</strong>. 
+Para todos utilizo <strong>Python</strong> e um pouco de conhecimento de web e HTML.</p>
+<p>Bora lá!</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Web-scraping-com-Selenium-e-Python">Web scraping com Selenium e Python<a class="anchor-link" href="#Web-scraping-com-Selenium-e-Python"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para inciarmos o processo é importante realizar todas as instalações ou importações das bibliotecas ou pacotes que iremos utilizar.</p>
+<ul>
+<li><strong>Webdriver</strong> que é necessário para navegarmos pela página web de modo automatizado. É preciso realizar o download dele conforme o browser que você utiliza e a versão dele instalada por meio desse <a href="https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/">site</a> e colocar o programa na mesma pasta do documento/notebook que você estará rodando.</li>
+<li>Utilizarei o browser do chrome, logo importarei também o <strong>Options</strong> para que eu possa definir navegação privada/incognito e tamanho da janela.</li>
+<li><strong>Pandas</strong> é essencial para transformarmos os dados em estrutura de data frame, que possui mesma estrutura de uma tabela (clolunas e linhas).</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>  <span class="c1">#se necessário utilizar um tempo de espera para rodar as próximas células</span>
+<span class="kn">from</span> <span class="nn">selenium</span> <span class="kn">import</span> <span class="n">webdriver</span> <span class="c1">#para conseguirmos navegar de modo automatizado pela página web</span>
+<span class="kn">from</span> <span class="nn">selenium.webdriver.chrome.options</span> <span class="kn">import</span> <span class="n">Options</span> <span class="c1">#configurar incognito</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> <span class="c1">#dataframe e exploração dos dados</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">chrome_options</span> <span class="o">=</span> <span class="n">Options</span><span class="p">()</span>
+<span class="n">chrome_options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--incognito&quot;</span><span class="p">)</span>
+<span class="n">chrome_options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--window-size=1920x1080&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">Chrome</span><span class="p">(</span><span class="n">chrome_options</span><span class="o">=</span><span class="n">chrome_options</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>A partir desse ponto definimos a página que gostaremos de estar explorando para captar os dados.</p>
+<p>No meu caso, utilizei o web scraping para puxar os dados dos novos contatos do linkedin (nome, área de atuação e horário da aceitação). Já insiro também uma células com variáveis para login e senha (sem tratamento adequado para proteção desses dados).</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://www.linkedin.com/login/pt?fromSignIn=true&amp;trk=guest_homepage-basic_nav-header-signin&quot;</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="c1">#utilizado para dar tempo extra para carregamento da página antes de rodar a próxima célula</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">login</span> <span class="o">=</span> <span class="s1">&#39;xpto@gmail.com&#39;</span> <span class="c1">#exemplo ilustrativo. Trocar pelo seu e atentar para não compartilhar o dados</span>
+<span class="n">password</span> <span class="o">=</span><span class="s1">&#39;x1p2t3o&#39;</span> <span class="c1">#exemplo ilustrativo. Trocar pelo seu e atentar para não compartilhar o dados</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para <strong>inspecionar o site</strong> você pode clicar com o botão direito e após clicar em inspecionar elemento. Abrirá uma janela com toda a estrtura do site em html com aspectos em outras linguagens como java ou c.</p>
+<p>O objetivo nesse momento é você identificar o que define o elemento que você quer interagir.</p>
+<p>No meu caso, quero clicar no espaço para login, então clico para inspecionar o espaço de preenchimento do usuário e busco o que define adequadamente esse espaço, mas muitas vezes precisamos descobrir na tentativa e erro mesmo.</p>
+<p>O Selenium possui diversos comandos para solicitarmos a identificação de determinada parte do site. Sempre iremos iniciar com o driver, uma vez que este define a janela que estamos navegando.</p>
+<p>identificação por id</p>
+
+<pre><code>var = driver.find_elements_by_id('inserir aqui')
+
+</code></pre>
+<p>identificação por nome</p>
+
+<pre><code>var = driver.find_elements_by_name('inserir aqui')
+
+</code></pre>
+<p>identificação por classe</p>
+
+<pre><code>var = driver.find_elements_by_class_name('inserir aqui')
+
+</code></pre>
+<p>identificação por texto especifico</p>
+
+<pre><code>var = driver.find_elements_by_link_text('inserir aqui')
+
+</code></pre>
+<p>identificação por parte do texto</p>
+
+<pre><code>var = driver.find_elements_by_partial_link_text('inserir aqui')
+
+</code></pre>
+<p>identificação por seletor css</p>
+
+<pre><code>var = driver.find_elements_by_css_selector('inserir aqui') 
+
+</code></pre>
+<p>identificação por caminho Xpath</p>
+
+<pre><code>var = driver.find_elements_by_xpath('inserir aqui')</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Após identificarmos o elemento adequadamente, podemos solicitar inserir algum dado ou podemos solicitar que clique no botão que identificamos.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">usuario</span> <span class="o">=</span>  <span class="n">driver</span><span class="o">.</span><span class="n">find_elements_by_class_name</span><span class="p">(</span><span class="s1">&#39;inserir aqui&#39;</span><span class="p">)</span> <span class="c1">#encontrando o local para preenchimento</span>
+<span class="n">usuario</span><span class="o">.</span><span class="n">send_keys</span><span class="p">(</span><span class="n">login</span><span class="p">)</span> <span class="c1">#solicitando inserir o dado da variável login</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">botao_entrar</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_elements_by_xpath</span><span class="p">(</span><span class="s1">&#39;inserir aqui&#39;</span><span class="p">)</span> <span class="c1">#encontrar o botão</span>
+<span class="n">botao_entrar</span><span class="o">.</span><span class="n">click</span><span class="p">()</span> <span class="c1">#solicitar click no botão</span>
+<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="c1">#aguardar 3segundos para rodar a próxima célula</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Você vai precisar realizar esse processo até chegar à página que você quer extrair os dados. Após o login, fui na 'minha rede' e 'conexões'.</p>
+<p>No linkedin é necessário rolar a página para carregar mais dados, então realizei a solicitação para rolar até encontrar o útlimo contato que havia visto. para rodar até o final, apenas inserir o elemento que englobe todos os contato na variável último.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">ultimo</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="s1">&#39;inserir aqui&#39;</span><span class="p">)</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="c1"># Realizar a rolagem</span>
+    <span class="n">driver</span><span class="o">.</span><span class="n">execute_script</span><span class="p">(</span><span class="s2">&quot;window.scrollTo(0, document.body.scrollHeight);&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Aguardar 1 segundo</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="c1"># Calculate new scroll height and compare with last scroll height</span>
+    <span class="n">_</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">execute_script</span><span class="p">(</span><span class="s2">&quot;return document.body.scrollHeight&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">_</span> <span class="o">==</span> <span class="n">ultimo</span><span class="p">:</span>
+        <span class="k">break</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Agora necessitamos realizar a retirada dos dados da página. Por meio do código abaixo você capta os dados do elemento definido e após extrai o dados em formato de texto. Realizei isso para nome, cargo e horário conforme já havia dito.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="n">people</span><span class="o">.</span><span class="n">find_elements_by_css_selector</span><span class="p">(</span><span class="s1">&#39;.mn-connection-card__name&#39;</span><span class="p">)</span>
+<span class="n">name</span> <span class="o">=</span> <span class="p">[</span><span class="n">n</span><span class="o">.</span><span class="n">text</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">names</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">cargos</span> <span class="o">=</span> <span class="n">people</span><span class="o">.</span><span class="n">find_elements_by_css_selector</span><span class="p">(</span><span class="s1">&#39;.mn-connection-card__occupation&#39;</span><span class="p">)</span>
+<span class="n">cargo</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span><span class="o">.</span><span class="n">text</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">cargos</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">horarios</span> <span class="o">=</span> <span class="n">people</span><span class="o">.</span><span class="n">find_elements_by_css_selector</span><span class="p">(</span><span class="s1">&#39;.time-badge&#39;</span><span class="p">)</span>
+<span class="n">horario</span> <span class="o">=</span> <span class="p">[</span><span class="n">h</span><span class="o">.</span><span class="n">text</span> <span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">horarios</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Por último precisamos finalizar o driver e construir o data frame para realizar o download dele para máquina local.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">driver</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;nome&#39;</span><span class="p">:</span><span class="n">name</span><span class="p">,</span> <span class="s1">&#39;cargo&#39;</span><span class="p">:</span><span class="n">cargo</span><span class="p">,</span> <span class="s1">&#39;horario&#39;</span><span class="p">:</span><span class="n">horario</span><span class="p">})</span>
+<span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;linkedin.csv&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><a class="u-url" href="/lpl_posts/2022/02/23/_02_08_web_scraping_p1.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/lpl_posts/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/lpl_posts/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/lpl_posts/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>My Universe</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
