@@ -7,16 +7,17 @@
 <title>pt-BR Web scraping - Beautiful Soup | Publications</title>
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="pt-BR Web scraping - Beautiful Soup" />
+<meta name="author" content="leticiaplang" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="My Universe" />
-<meta property="og:description" content="My Universe" />
-<link rel="canonical" href="https://leticiaplang.github.io/lpl_posts/2022/03/13/_02_08_web_scraping_p2.html" />
-<meta property="og:url" content="https://leticiaplang.github.io/lpl_posts/2022/03/13/_02_08_web_scraping_p2.html" />
+<meta name="description" content="Beautiful Soup &amp; Python." />
+<meta property="og:description" content="Beautiful Soup &amp; Python." />
+<link rel="canonical" href="https://leticiaplang.github.io/lpl_posts/fastpages/jupyter/2022/03/13/_02_08_web_scraping_p2.html" />
+<meta property="og:url" content="https://leticiaplang.github.io/lpl_posts/fastpages/jupyter/2022/03/13/_02_08_web_scraping_p2.html" />
 <meta property="og:site_name" content="Publications" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-03-13T00:00:00-06:00" />
 <script type="application/ld+json">
-{"url":"https://leticiaplang.github.io/lpl_posts/2022/03/13/_02_08_web_scraping_p2.html","@type":"BlogPosting","headline":"pt-BR Web scraping - Beautiful Soup","dateModified":"2022-03-13T00:00:00-06:00","datePublished":"2022-03-13T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://leticiaplang.github.io/lpl_posts/2022/03/13/_02_08_web_scraping_p2.html"},"description":"My Universe","@context":"https://schema.org"}</script>
+{"url":"https://leticiaplang.github.io/lpl_posts/fastpages/jupyter/2022/03/13/_02_08_web_scraping_p2.html","@type":"BlogPosting","headline":"pt-BR Web scraping - Beautiful Soup","dateModified":"2022-03-13T00:00:00-06:00","datePublished":"2022-03-13T00:00:00-06:00","author":{"@type":"Person","name":"leticiaplang"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://leticiaplang.github.io/lpl_posts/fastpages/jupyter/2022/03/13/_02_08_web_scraping_p2.html"},"description":"Beautiful Soup &amp; Python.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/lpl_posts/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://leticiaplang.github.io/lpl_posts/feed.xml" title="Publications" /><link rel="shortcut icon" type="image/x-icon" href="/lpl_posts/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -80,16 +81,28 @@ window.onload = wrap_img;
  <body style="background-color:#F6BE00">
          
  <header class="post-header">
-      <h1 class="post-title p-name" itemprop="name headline">pt-BR | Web scraping - Beautiful Soup</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-03-13T00:00:00-06:00" itemprop="datePublished">
+      <h1 class="post-title p-name" itemprop="name headline">pt-BR | Web scraping - Beautiful Soup</h1><p class="page-description">Beautiful Soup & Python.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-03-13T00:00:00-06:00" itemprop="datePublished">
         Mar 13, 2022
-      </time>
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">leticiaplang</span></span>
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      5 min read
     
 </span></p>
 
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/lpl_posts/categories/#fastpages">fastpages</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/lpl_posts/categories/#jupyter">jupyter</a>
+        
+      
+      </p>
     
 
     
@@ -111,21 +124,6 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>toc: false</li>
-<li>branch: master</li>
-<li>badges: true</li>
-<li>comments: false</li>
-<li>categories: [fastpages, jupyter]</li>
-<li>hide: false</li>
-<li>author: leticiaplang</li>
-</ul>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Seguindo com o <strong>web scraping</strong>, teremos nesse notebook a coleta de dados utilizando o <strong>Beautiful Soup</strong>. Diferente o Selenium, não utilizaremos janela de web para realizar o processo, faremos isso às cegas por meio de comendos.</p>
@@ -421,7 +419,7 @@ window.onload = wrap_img;
 
 
 
-  </div><a class="u-url" href="/lpl_posts/2022/03/13/_02_08_web_scraping_p2.html" hidden></a>
+  </div><a class="u-url" href="/lpl_posts/fastpages/jupyter/2022/03/13/_02_08_web_scraping_p2.html" hidden></a>
 </article>
 
       </div>
