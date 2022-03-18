@@ -4,20 +4,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Project Drug Classification | Publications</title>
+<title>Projeto Drug Classification | Publications</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Project Drug Classification" />
+<meta property="og:title" content="Projeto Drug Classification" />
 <meta name="author" content="leticiaplang" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Data cleaning, data wrangling, insights for business, classification algorithm." />
-<meta property="og:description" content="Data cleaning, data wrangling, insights for business, classification algorithm." />
-<link rel="canonical" href="https://leticiaplang.github.io/lpl_posts/fastpages/jupyter/2022/03/13/_03_14_drug_classification.html" />
-<meta property="og:url" content="https://leticiaplang.github.io/lpl_posts/fastpages/jupyter/2022/03/13/_03_14_drug_classification.html" />
+<meta name="description" content="Limpeza de dados, transformação de dados, insights para o negócio, algorítimo de classificação." />
+<meta property="og:description" content="Limpeza de dados, transformação de dados, insights para o negócio, algorítimo de classificação." />
+<link rel="canonical" href="https://leticiaplang.github.io/lpl_posts/fastpages/jupyter/2022/03/17/_03_14_drug_classification_pt.html" />
+<meta property="og:url" content="https://leticiaplang.github.io/lpl_posts/fastpages/jupyter/2022/03/17/_03_14_drug_classification_pt.html" />
 <meta property="og:site_name" content="Publications" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-03-13T00:00:00-06:00" />
+<meta property="article:published_time" content="2022-03-17T00:00:00-05:00" />
 <script type="application/ld+json">
-{"url":"https://leticiaplang.github.io/lpl_posts/fastpages/jupyter/2022/03/13/_03_14_drug_classification.html","@type":"BlogPosting","headline":"Project Drug Classification","dateModified":"2022-03-13T00:00:00-06:00","datePublished":"2022-03-13T00:00:00-06:00","author":{"@type":"Person","name":"leticiaplang"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://leticiaplang.github.io/lpl_posts/fastpages/jupyter/2022/03/13/_03_14_drug_classification.html"},"description":"Data cleaning, data wrangling, insights for business, classification algorithm.","@context":"https://schema.org"}</script>
+{"url":"https://leticiaplang.github.io/lpl_posts/fastpages/jupyter/2022/03/17/_03_14_drug_classification_pt.html","@type":"BlogPosting","headline":"Projeto Drug Classification","dateModified":"2022-03-17T00:00:00-05:00","datePublished":"2022-03-17T00:00:00-05:00","author":{"@type":"Person","name":"leticiaplang"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://leticiaplang.github.io/lpl_posts/fastpages/jupyter/2022/03/17/_03_14_drug_classification_pt.html"},"description":"Limpeza de dados, transformação de dados, insights para o negócio, algorítimo de classificação.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/lpl_posts/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://leticiaplang.github.io/lpl_posts/feed.xml" title="Publications" /><link rel="shortcut icon" type="image/x-icon" href="/lpl_posts/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -81,8 +81,8 @@ window.onload = wrap_img;
  <body style="background-color:#F6BE00">
          
  <header class="post-header">
-      <h1 class="post-title p-name" itemprop="name headline">Project | Drug Classification</h1><p class="page-description">Data cleaning, data wrangling, insights for business, classification algorithm.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-03-13T00:00:00-06:00" itemprop="datePublished">
-        Mar 13, 2022
+      <h1 class="post-title p-name" itemprop="name headline">Projeto | Drug Classification</h1><p class="page-description">Limpeza de dados, transformação de dados, insights para o negócio, algorítimo de classificação.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-03-17T00:00:00-05:00" itemprop="datePublished">
+        Mar 17, 2022
       </time>• 
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
             <span class="p-author h-card" itemprop="name">leticiaplang</span></span>
@@ -119,64 +119,65 @@ window.onload = wrap_img;
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
-# file to edit: _notebooks/2022_03_14_drug_classification.ipynb
+# file to edit: _notebooks/2022_03_14_drug_classification_pt.ipynb
 -->
 
 <div class="container" id="notebook-container">
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="https://colab.research.google.com/github/leticiaplang/lpl_posts/blob/master/_notebooks/2022_03_14_drug_classification.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" /></a></p>
+<p><a href="https://colab.research.google.com/github/leticiaplang/lpl_posts/blob/master/_notebooks/2022_03_14_drug_classification_pt.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" /></a></p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Drug-Classification">Drug Classification<a class="anchor-link" href="#Drug-Classification"> </a></h1><h2 id="Business-problem">Business problem<a class="anchor-link" href="#Business-problem"> </a></h2><p>One of the biggest pain at healthcare services is the medication and prescription errors. According Rayhan A. and collegue's article the ordering/prescribing errors include 50% of the total medications errors. It's harms not only the patient, familly and professionals, as the company, once it's esteemed an bigger cost of $40 billion each year to look after these patients. This algorithm is the first step to construct an MVP looking for help at secure medication presciption. After that we are going analyse dosage data and a bigger sample for better results.</p>
-<h2 id="Overview">Overview<a class="anchor-link" href="#Overview"> </a></h2><ul>
-<li><p>This dataset is from Kaggle and you can access the original one clicking on <a href="https://www.kaggle.com/prathamtripathi/drug-classification">here</a>.</p>
+<h1 id="Drug-Classification">Drug Classification<a class="anchor-link" href="#Drug-Classification"> </a></h1><h2 id="Problema-de-Neg&#243;cio">Problema de Neg&#243;cio<a class="anchor-link" href="#Problema-de-Neg&#243;cio"> </a></h2><p>Uma das grandes dores dos serviços de saúde são os erros relacionados a medicamentos. De acordo com o artigo de Rayhan A. e colegas, os erros de pescrição e solicitação englobam 50% dos erros totais relacionamentos a medicamentos. O dano não ocorre apesas ao paciente, familiar ou aos profissionais, mas também à própria empresa, uma vez que são estimados gastos maiores a 40 bilhões de dólares por ano para o cuidado desses pacientes. Este algoritmo é o primeiro passo para a construção de um MVP (produto mínimo viável) visando auxílio para prescrição de medicamentos segura. Após, será realizada análise de dose, juntamente com a análise em uma amostra de tamanho maior.</p>
+<h2 id="Vis&#227;o-Geral">Vis&#227;o Geral<a class="anchor-link" href="#Vis&#227;o-Geral"> </a></h2><ul>
+<li><p>Este dataset foi retirado do Kaggle e você pode acessá-lo clicando <a href="https://www.kaggle.com/prathamtripathi/drug-classification">aqui</a>.</p>
 </li>
-<li><p>This dataset is about health conditions (exams analysis) and the treatment prescripted.</p>
+<li><p>Este dataset engloba dados demográficos, condições de saúde (análise de exames laboratorias) e o tratamento precrito.</p>
 </li>
-<li><p>The goal of this project is predict which drug will be prescripted based on that features.</p>
+<li><p>O objetivo deste projeto é preizer qual droga deverá ser utilizada baseado nos atributos.</p>
 </li>
-<li><p>It was possible get insights about some features</p>
+<li><p>Foi possível retirar alguns insights analisando os atributos</p>
 </li>
-<li><p>The classification was needed to garantee the accuracy of the results</p>
+<li><p>O algoritmo de classificação foi necessário para garantir a acurácia do resultado.</p>
 </li>
-<li><p>The baseline algorithm was dummy classifier</p>
+<li><p>O algoritmo de base utilizado com o Dummie classifier.</p>
 </li>
-<li><p>The classification was needed to garantee the accuracy of the results.</p>
+<li><p>O algoritmo com melhor desempenho foi o de regressão logística. Pode ser utilizado como MVP.</p>
+</li>
+<li><p>Próximos passos é realizar o tuning do modelo e features.</p>
 </li>
 </ul>
-<h2 id="Notebook-structure">Notebook structure<a class="anchor-link" href="#Notebook-structure"> </a></h2><ul>
-<li>Preparing the environment<ul>
-<li>Imports</li>
-<li>Installs</li>
-<li>Requirements</li>
-<li>Dataset import &amp; transformation into dataframe</li>
+<h2 id="Estrutura-do-Notebook-(c&#243;digo-em-ingl&#234;s)">Estrutura do Notebook (c&#243;digo em ingl&#234;s)<a class="anchor-link" href="#Estrutura-do-Notebook-(c&#243;digo-em-ingl&#234;s)"> </a></h2><ul>
+<li>Preparando o ambiente<ul>
+<li>Instalações</li>
+<li>Importações</li>
+<li>Requisitos</li>
+<li>Importação do dataset e transformação dele em dataframe</li>
 </ul>
 </li>
-<li>Dataframe exploration<ul>
-<li>Dataframe characteristics</li>
-<li>Transformations</li>
+<li>Exploração do dataframe<ul>
+<li>Característica do dataframe</li>
+<li>Transformações</li>
+<li>Anaálise exploratória</li>
+<li>Distribuição e balanceamento</li>
+<li>análise de outlier</li>
 </ul>
 </li>
-<li>Exploratory analysis<ul>
-<li>Distribution and balance</li>
-<li>Outlier analysis</li>
-<li>Business insights </li>
+<li>Insights de negócio</li>
+<li>Modelagem<ul>
+<li>Engenharia de atributos</li>
+<li>Definição de funções </li>
+<li>Criando cenários</li>
+<li>Testando os cenários</li>
 </ul>
 </li>
-<li>Modeling<ul>
-<li>Feature engineering</li>
-<li>Helper function definitions</li>
-<li>Testing scenarios</li>
-</ul>
-</li>
-<li>Conclusion &amp; next steps</li>
-<li>References</li>
+<li>Conclusão e próximo passos</li>
+<li>Referências</li>
 </ul>
 
 </div>
@@ -184,7 +185,7 @@ window.onload = wrap_img;
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Preparing-the-environment">Preparing the environment<a class="anchor-link" href="#Preparing-the-environment"> </a></h2>
+<h2 id="Preparando-o-ambiente">Preparando o ambiente<a class="anchor-link" href="#Preparando-o-ambiente"> </a></h2>
 </div>
 </div>
 </div>
@@ -457,26 +458,25 @@ window.onload = wrap_img;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Dataframe-exploration">Dataframe exploration<a class="anchor-link" href="#Dataframe-exploration"> </a></h2>
+<h2 id="Exlporando-o-dataframe">Exlporando o dataframe<a class="anchor-link" href="#Exlporando-o-dataframe"> </a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Dataframe-characteristics">Dataframe characteristics<a class="anchor-link" href="#Dataframe-characteristics"> </a></h3><ul>
-<li>It has 200 rows and 6 columns</li>
-<li>None inconsistent data identified</li>
-<li>Numeric variables are: <ul>
-<li>Age: 15 to 74 years</li>
-<li>Na to Potassium Ratio: 6.269 - 38.247 | Urinary exam | A high ratio is an indicator 
-of a higher Na intake and a lower K intake.</li>
+<h3 id="Caracter&#237;stica-do-dataframe">Caracter&#237;stica do dataframe<a class="anchor-link" href="#Caracter&#237;stica-do-dataframe"> </a></h3><ul>
+<li>Ele possui 200 linhas e 6 colnass</li>
+<li>Não foram identificados dados inconsistentes</li>
+<li>As variáveis numéricas são: <ul>
+<li>Age | idade: 15 to 74 anos</li>
+<li>Na to Potassium Ratio | razão sódio e potássio: 6.269 - 38.247 | Exame de urina | Altas razão significa consumo elevado de Sodio e menor de Potássio.</li>
 </ul>
 </li>
-<li>Categorical variables are:<ul>
-<li>Sex: F(female), M(male)</li>
-<li>Blood Pressure Levels (BP): normal, low, high</li>
-<li>Cholesterol Levels: normal, high | Blood exam</li>
-<li>Drug (a, b, c, x, y)</li>
+<li>As variáveis categóricas são:<ul>
+<li>Sex | sexo: F(feminino), M(masculino)</li>
+<li>Blood Pressure Levels (BP) | pressão arterial: normal, low/baixa, high/alta</li>
+<li>Cholesterol Levels | colesterol: normal, high/alto | exame de sangue</li>
+<li>Drug | droga: a, b, c, x, y</li>
 </ul>
 </li>
 </ul>
@@ -868,9 +868,9 @@ memory usage: 9.5+ KB
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Transformations">Transformations<a class="anchor-link" href="#Transformations"> </a></h3><ul>
-<li>Lowercased strings</li>
-<li>Delete the word 'drug' from values at drug column</li>
+<h3 id="Transforma&#231;&#245;es">Transforma&#231;&#245;es<a class="anchor-link" href="#Transforma&#231;&#245;es"> </a></h3><ul>
+<li>Texto transformado para letra minúscula</li>
+<li>Deletada a palavra 'drug' dos valores da coluna drug</li>
 </ul>
 
 </div>
@@ -1130,16 +1130,16 @@ memory usage: 9.5+ KB
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Exploratory-Analysis">Exploratory Analysis<a class="anchor-link" href="#Exploratory-Analysis"> </a></h2>
+<h2 id="An&#225;lise-Explorat&#243;ria">An&#225;lise Explorat&#243;ria<a class="anchor-link" href="#An&#225;lise-Explorat&#243;ria"> </a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Distribution-&amp;-Outlier">Distribution &amp; Outlier<a class="anchor-link" href="#Distribution-&amp;-Outlier"> </a></h3><ul>
-<li>Imbalance categorical data</li>
-<li>Age - more similar to a symmetrical distribution</li>
-<li>Na to K - positive skewness | Outlier seems be associated with drug y</li>
+<h3 id="Distribui&#231;&#227;o-&amp;-Outlier">Distribui&#231;&#227;o &amp; Outlier<a class="anchor-link" href="#Distribui&#231;&#227;o-&amp;-Outlier"> </a></h3><ul>
+<li>Dados categóricos desbalanceados</li>
+<li>Age|idade - distribuição mais próxima de normal</li>
+<li>Na to K - assimetria à direita | Outlier parece estar associado ao uso da droga y</li>
 </ul>
 
 </div>
@@ -1165,7 +1165,7 @@ memory usage: 9.5+ KB
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h5 id="Countinous-variables">Countinous variables<a class="anchor-link" href="#Countinous-variables"> </a></h5>
+<h5 id="Vari&#225;veis-cont&#237;nuas">Vari&#225;veis cont&#237;nuas<a class="anchor-link" href="#Vari&#225;veis-cont&#237;nuas"> </a></h5>
 </div>
 </div>
 </div>
@@ -1548,10 +1548,10 @@ memory usage: 9.5+ KB
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Business-Insights">Business Insights<a class="anchor-link" href="#Business-Insights"> </a></h3><ul>
-<li><p>Can we prescribe the correct treatment?</p>
+<h3 id="Insights-de-neg&#243;cio">Insights de neg&#243;cio<a class="anchor-link" href="#Insights-de-neg&#243;cio"> </a></h3><ul>
+<li><p>É possível prescrever corretamente as drogas??</p>
 </li>
-<li><p>Informations from data analysis:</p>
+<li><p>Informações retiradas da análise de dados:</p>
 
 <pre><code>        || Drug A | Drug B | Drug C | Drug X | Drug Y |
 
@@ -1561,7 +1561,7 @@ memory usage: 9.5+ KB
 |  Chol ||        |        |  high  |        |        |
 |  Na_K ||  &lt; 15  |  &lt; 15  |  &lt; 15  |  &lt; 15  |  &gt; 15  |</code></pre>
 </li>
-<li><p>Age and sex without insights. They are import features?</p>
+<li><p>Idade e sexo sem insights. Serão features importantes para a nálise?</p>
 </li>
 </ul>
 
@@ -1759,12 +1759,12 @@ memory usage: 9.5+ KB
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Algorithm">Algorithm<a class="anchor-link" href="#Algorithm"> </a></h2><ul>
-<li>The insights couldn't define at all which drug will be used based on features.</li>
-<li>This is a classification problem which has as:<ul>
-<li>Target: Drug</li>
-<li>Continuous features: Age and Na_to_K</li>
-<li>Categorical features: Sex, Bp, Cholesterol</li>
+<h2 id="Modelagem">Modelagem<a class="anchor-link" href="#Modelagem"> </a></h2><ul>
+<li>Os insights nõa permitem definir com precisão quais drogas podem ser utilizadas conforme os atributos.</li>
+<li>Este é um problema de c;assificação que possui:<ul>
+<li>Alvo: Drug|droga</li>
+<li>Atributos contínuas: Age|idade and Na_to_K|razão Na e K</li>
+<li>Atributos Categóricos: Sex|sexo, Bp|pressão arterial, Cholesterol|colesterol</li>
 </ul>
 </li>
 </ul>
@@ -1774,8 +1774,8 @@ memory usage: 9.5+ KB
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Feature-engineering">Feature engineering<a class="anchor-link" href="#Feature-engineering"> </a></h4><ul>
-<li>Transforming target and caterogical features with label enconder
+<h4 id="engenharia-de-atributos">engenharia de atributos<a class="anchor-link" href="#engenharia-de-atributos"> </a></h4><ul>
+<li>Transformando o alvo e os atributos com label enconder
 <pre><code>  |  sex  |  drug  |   bp   | cholesterol |
 0 |   f   |    a   |  low   |    normal   |
 1 |   m   |    b   | normal |     high    |
@@ -2008,7 +2008,7 @@ memory usage: 9.5+ KB
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Helper-function-definitions">Helper function definitions<a class="anchor-link" href="#Helper-function-definitions"> </a></h3>
+<h3 id="Defin&#231;&#227;o-das-fun&#231;&#245;es">Defin&#231;&#227;o das fun&#231;&#245;es<a class="anchor-link" href="#Defin&#231;&#227;o-das-fun&#231;&#245;es"> </a></h3>
 </div>
 </div>
 </div>
@@ -2153,7 +2153,7 @@ memory usage: 9.5+ KB
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Creating-scenarios">Creating scenarios<a class="anchor-link" href="#Creating-scenarios"> </a></h3>
+<h3 id="Criando-os-cen&#225;rios">Criando os cen&#225;rios<a class="anchor-link" href="#Criando-os-cen&#225;rios"> </a></h3>
 </div>
 </div>
 </div>
@@ -2212,8 +2212,8 @@ memory usage: 9.5+ KB
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Testing-scenarios">Testing scenarios<a class="anchor-link" href="#Testing-scenarios"> </a></h3><ul>
-<li>Baseline == Dummy</li>
+<h3 id="Testando-os-cen&#225;rios">Testando os cen&#225;rios<a class="anchor-link" href="#Testando-os-cen&#225;rios"> </a></h3><ul>
+<li>Algoritmo de base == Dummy</li>
 </ul>
 
 </div>
@@ -2422,12 +2422,12 @@ dtype: float64</pre>
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Conclusion-&amp;-Next-steps">Conclusion &amp; Next steps<a class="anchor-link" href="#Conclusion-&amp;-Next-steps"> </a></h2><ul>
-<li>The best model performance was with the logistic regression</li>
-<li>The model predict correctly 89% of the sample</li>
-<li>It identifies less false positives(precision) and a little more of false negatives (recall)</li>
-<li>It's a good result for MVP 😃</li>
-<li>This can be improved by tunning model and features as well colect more data and insert the drug dosage.</li>
+<h2 id="Conclus&#245;es-e-pr&#243;ximos-passos">Conclus&#245;es e pr&#243;ximos passos<a class="anchor-link" href="#Conclus&#245;es-e-pr&#243;ximos-passos"> </a></h2><ul>
+<li>O modelo com melhor performance foi regressão logística</li>
+<li>Este modelo pode prever corretamente o medicamento dado no tratamento em 89% das vezes</li>
+<li>Ele identifica menos falsos positivos(precision) e um pouco mais dos false negativos(recall)</li>
+<li>Este é um ótimo resultado para um MVP 😃</li>
+<li>Para melhor perfomar, deve-se realizar o tuning do modelo e atributos. Além de coletar mais dados e inserir dosagem dos medicamentos.</li>
 </ul>
 
 </div>
@@ -2437,7 +2437,7 @@ dtype: float64</pre>
 
 
 
-  </div><a class="u-url" href="/lpl_posts/fastpages/jupyter/2022/03/13/_03_14_drug_classification.html" hidden></a>
+  </div><a class="u-url" href="/lpl_posts/fastpages/jupyter/2022/03/17/_03_14_drug_classification_pt.html" hidden></a>
 </article>
 
       </div>
