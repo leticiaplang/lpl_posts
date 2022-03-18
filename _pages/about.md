@@ -21,6 +21,7 @@ permalink: /about/
  ▪️ Now I'm data scientist to use the criative potetial to benefit people with data driven decision making and task automatization 
  <br>
  ▪️ Did you know❓that ,at 1854, a nurse started the analytical approach to medical care? [Read  more about it](https://www.sciencemuseum.org.uk/objects-and-stories/florence-nightingale-pioneer-statistician)
+ 
 <br>
  ▪️ The next steps are continuing my studies by profounding knowledge, looking for chalenges or associated contents and continuing help people who are interested in this data world or who are on this journey as I'm 
 <br>
