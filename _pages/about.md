@@ -6,7 +6,7 @@ permalink: /about/
 
 <p align=center> 
  | <img src="https://media4.giphy.com/media/cACmN9YBnrV9KyK6nG/giphy.gif?cid=ecf05e4766vbcycjyubog8674zfaz9vepsv6c9l8byf92c69&rid=giphy.gif&ct=g" alt="animated" width="300" height="300"/> | <img src="https://media4.giphy.com/media/fedryX7dMGMe6lgqDm/giphy.gif?cid=ecf05e470o0ozcr946mob49yz2dr2mk2bpuvgroyo0wzzlv2&rid=giphy.gif&ct=g" alt="animated" width="300" height="300"/>| 
-</p> <p align=center> 
+</p> </p align=center> 
 
 <body>
   
