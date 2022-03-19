@@ -8,8 +8,7 @@ permalink: /about/
  | <img src="https://media4.giphy.com/media/cACmN9YBnrV9KyK6nG/giphy.gif?cid=ecf05e4766vbcycjyubog8674zfaz9vepsv6c9l8byf92c69&rid=giphy.gif&ct=g" alt="animated" width="300" height="300"/> | <img src="https://media4.giphy.com/media/fedryX7dMGMe6lgqDm/giphy.gif?cid=ecf05e470o0ozcr946mob49yz2dr2mk2bpuvgroyo0wzzlv2&rid=giphy.gif&ct=g" alt="animated" width="300" height="300"/>| 
 </p>  
 
-<body>
-  <style="color: #515151">
+<body "color: #515151">
  <h4>▪️ This gif is a little cliche, but it's still exciting and the beginning of a journey for a lot of people 🧙
   <br>
  <h4>▪️ I'm a person who appreciate the smallest daily things, enjoying the present, living with harmony and helping as always as possible 🇧🇷
