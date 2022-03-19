@@ -379,27 +379,27 @@ h1:hover .anchor-link, h2:hover .anchor-link, h3:hover .anchor-link, h4:hover .a
 
 .category-tags-icon { font-size: 75% !important; padding-left: 0.375em; opacity: 35%; }
 
-.category-tags-link { color: #FFD700 !important; font-size: 13px !important; }
+.category-tags-link { color: #515151 !important; font-size: 13px !important; }
 
 .js-search-results { padding-top: 0.2rem; }
 
 .search-results-list-item { padding-bottom: 1rem; }
 
-.search-results-list-item .search-result-title { font-size: 16px; color: #FFD700; }
+.search-results-list-item .search-result-title { font-size: 16px; color: #515151; }
 
-.search-result-rel-url { color: #FFFAF0; }
+.search-result-rel-url { color: #515151; }
 
-.search-results-list-item a { display: block; color: #FFFAF0; }
+.search-results-list-item a { display: block; color: #515151; }
 
 .search-results-list-item a:hover, .search-results-list-item a:focus { text-decoration: none; }
 
 .search-results-list-item a:hover .search-result-title { text-decoration: underline; }
 
-.search-result-rel-date { color: floralwhite; font-size: 14px; }
+.search-result-rel-date { color: #585858; font-size: 14px; }
 
-.search-result-preview { color: #FFFAF0; font-size: 16px; margin-top: .02rem !important; margin-bottom: .02rem !important; }
+.search-result-preview { color: #515151; font-size: 16px; margin-top: .02rem !important; margin-bottom: .02rem !important; }
 
-.search-result-highlight { color: #FFD700; font-weight: bold; }
+.search-result-highlight { color: #515151; font-weight: bold; }
 
 table { white-space: normal; max-width: 100%; font-size: 100%; border: none; }
 
