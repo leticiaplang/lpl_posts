@@ -9,7 +9,7 @@ permalink: /about/
 </p>  
 
 <body>
-  
+  <style="color: #515151">
  <h4>▪️ This gif is a little cliche, but it's still exciting and the beginning of a journey for a lot of people 🧙
   <br>
  <h4>▪️ I'm a person who appreciate the smallest daily things, enjoying the present, living with harmony and helping as always as possible 🇧🇷
